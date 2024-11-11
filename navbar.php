@@ -9,7 +9,7 @@
 
 <body>
     <nav class="navbar">
-        <a href="index.php" class="nav-logo">Recipe Modifier</a>
+        <a href="index.php" class="nav-logo">Simple Recipe App</a>
         <span class="toggle-button" onclick="toggleNavbar()">☰</span>
         <ul class="nav-links" id="navLinks">
             <li><a href="index.php">Home</a></li>
