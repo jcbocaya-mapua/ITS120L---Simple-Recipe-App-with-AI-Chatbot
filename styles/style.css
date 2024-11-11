@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #e9f0e8;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    margin: 0.5em;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+input, textarea, select, button {
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Home Page Styles */
+.home-container {
+    text-align: center;
+    padding: 2em;
+}
+
+.quick-links {
+    margin-top: 1em;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    margin: 0.5em;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+.featured-recipes {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+.recipe-card {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-card h3 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.recipe-card h3 a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c5d5c7;
+    padding: 1em;
+}
+
+.nav-logo {
+    color: #111;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #111;
+    text-decoration: none;
+    padding: 0.5em;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #95a297;
+    border-radius: 5px;
+}
+
+
+/* Responsive Navbar */
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+        display: none; /* Hidden by default */
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .toggle-button {
+        display: inline-block;
+        color: #fff;
+        font-size: 1.5em;
+        cursor: pointer;
+    }
+}
+
+/* Recipe Creation Page Styles */
+.form-container {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+    margin-top: 0.2em;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 60%;
+}
+
+button[type="button"] {
+    margin: 0.5em 0;
+}
+
+#ingredientContainer {
+    margin: 1em auto; /* Centers the container horizontally and adds top margin */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredient-item {
+    display: flex;
+    gap: 1em; /* Adds space between each input field */
+    align-items: center; /* Aligns items vertically center */
+    margin-bottom: 0.5em; /* Adds space between each ingredient-item row */
+}
+
+.add-button {
+    background-color: #9fad9d;
+    color: #000;
+    width: 60%;
+}
+
+.add-button:hover {
+    background-color: #717c70; 
+}
+
+.submit-button {
+    background-color: #26532B;
+    color:  #fff;
+    width: 150px;    
+    height: 40px;   
+    border-radius: 10px;
+}
+
+.submit-button:hover {
+    background-color: #384e3b;
+    
+}
+
+
+/* Recipe Edit Page Styles */
+.edit-container {
+    text-align: center;
+}
+
+
+.recipeedit-container button {
+    background-color: #9fad9d; /* Change to desired color */
+    color: #000;
+    cursor: pointer;
+    width: 60%;
+}
+
+.recipeedit-container button:hover {
+    background-color: #717c70; 
+}
+
+.recipeedit-container input[type="submit"] {
+    background-color: #26532B;
+    color:  #fff;
+    width: 150px;    
+    height: 40px;   
+    border-radius: 10px;
+}
+
+.recipeedit-container input[type="submit"]:hover {
+    background-color: #384e3b;
+}
+
+button[type="submit"] {
+    background-color: #9b111f;
+    color:  #fff;
+    width: 150px;    
+    height: 40px;   
+    border-radius: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #720f19;
+}
+
+.delete-btn {
+    background-color: #220104;
+    color: white;
+    margin-top: 1em;
+}
+
+.delete-btn:hover {
+    background-color: #e4e4e4;
+}
+
+/* Recipe View Page Styles */
+.view-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Allows content to stack vertically */
+    text-align: center;
+}
+
+.recipe-details {
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 1em;
+}
+
+.recipe-details h3 {
+    color: #555;
+}
+
+.recipe-instructions {
+    margin-top: 1em;
+    padding: 1em;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007bff;
+}
+
+.ingredient-list, .instruction-list {
+    padding-left: 1em;
+    list-style: disc;
+}
+
+.ingredient-list li, .instruction-list li {
+    margin-bottom: 0.5em;
+}
+
+#servingSize {
+    width: 80px; /* Set a specific width in pixels */
+    padding: 0.5em; /* Optional: Adjust padding for better appearance */
+    border-radius: 5px; /* Optional: Rounds corners for a modern look */
+}
+
+
+
+/* Search Page Styles */
+.search-container {
+    text-align: center;
+}
+
+.search-container input[type="text"] {
+    width: 60%;
+}
+
+.search-container button[type="submit"] {
+    background-color: #26532B;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;    
+    height: 40px;   
+}
+
+.search-container button[type="submit"]:hover {
+    background-color: #384e3b;
+}
+
+.result-list {
+    margin-top: 2em;
+    text-align: left;
+}
+
+.result-list li {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border: 1px solid #ddd;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+/* Chatbot Style */
+.chat-container {
+    width: 600px; /* Adjusted width */
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #c5d5c7;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.chat-container h3 {
+    text-align: center;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#chat-box {
+    max-height: 300px; /* Height of the chat box */
+    overflow-y: auto;  /* Scrollable when the content overflows */
+    padding: 15px;
+    background-color: #e9f0e8;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+#chat-box p {
+    margin: 8px 0;
+}
+
+#chat-box p strong {
+    color: #555;
+}
+
+#chat-box::-webkit-scrollbar {
+    width: 8px;
+}
+
+#chat-box::-webkit-scrollbar-thumb {
+    background-color: #aaa;
+    border-radius: 5px;
+}
+
+#chat-box::-webkit-scrollbar-track {
+    background-color: #e0e0e0;
+}
+
+#user-input {
+    width: calc(100% - 70px); /* Adjusted for the button size */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#chat-form {
+    display: flex;
+    gap: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #26532B;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #384e3b;
+}
