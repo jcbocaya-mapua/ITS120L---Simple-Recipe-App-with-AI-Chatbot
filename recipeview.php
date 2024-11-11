@@ -19,7 +19,7 @@ if (!$recipe) {
 
 // Fetch ingredients with nutritional data
 $ingredients_sql = "
-    SELECT i.ingredient_name, i.quantity, i.unit, n.calories, n.fats, n.carbohydrates, n.proteins
+    SELECT i.ingredient_name, i.quantity, i.unit
     FROM ingredients i
     WHERE i.recipe_id = ?";
 $ingredients_stmt = $conn->prepare($ingredients_sql);
