@@ -21,7 +21,6 @@ if (!$recipe) {
 $ingredients_sql = "
     SELECT i.ingredient_name, i.quantity, i.unit, n.calories, n.fats, n.carbohydrates, n.proteins
     FROM ingredients i
-    LEFT JOIN nutrition_data n ON i.ingredient_name = n.ingredient_name
     WHERE i.recipe_id = ?";
 $ingredients_stmt = $conn->prepare($ingredients_sql);
 $ingredients_stmt->bind_param("i", $recipe_id);
